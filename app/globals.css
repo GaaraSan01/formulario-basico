@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --primary-color: #64BC9E;
+    --secundary-color: #1A1D39 ;
+}
+
+/*Formulário*/
+
+.divInput {
+    position: relative;
+    display: flex;
+    width: 910px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.divInput label span {
+    position: absolute;
+    color: var(--primary-color);
+    left: 30px;
+}
+
+.divInput label:focus-within span {
+    color: white;
+}
+
+.divInput label input {
+    height: 100%;
+    padding: 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 3px solid #000;
+    flex-grow: 1;
+    padding-left: 120px;
+}
+
+.divInput label select {
+    padding-left: 150px !important;
+    height: 100%;
+    padding: 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 3px solid #000;
+    flex-grow: 1;
+}
+
+.divInput .inputComponent:focus {
+    border-radius: 10px;
+    background: var(--primary-color, #64BC9E);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border: 3px solid transparent;
+    color: white;
+}
+
+.divInput .inputComponent:hover{
+    border: 3px solid var(--primary-color);
+}
